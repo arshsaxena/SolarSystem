@@ -1,2 +1,2 @@
 # SolarSystem
-Solar System by Arsh using HTML, CSS and JavaScript
+Solar System by Arsh using HTML, CSS and JavaScript.
