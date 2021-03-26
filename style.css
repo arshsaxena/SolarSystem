@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "font-regular";
+    src: url('/fonts/font.otf');
+}
+@font-face{
+    font-family: "font-bold";
+    src: url('/fonts/font-bold.otf');
+}
+@font-face{
+    font-family: "font-italic";
+    src: url('/fonts/font-italic.otf');
+}
 html{
     overflow-x: hidden;
 }
@@ -7,6 +19,13 @@ body {
     background-size: cover;
     background-color: black;
     margin: 0;
+    font-family: font-regular;
+}
+b{
+    font-family: font-bold;
+}
+i{
+    font-family: font-italic;
 }
 .nav{
     background-color: rgba(29, 29, 31, 0.3);
