@@ -1,14 +1,14 @@
 @font-face {
     font-family: "font-regular";
-    src: url('/fonts/font.otf');
+    src: url('fonts/font.otf');
 }
 @font-face{
     font-family: "font-bold";
-    src: url('/fonts/font-bold.otf');
+    src: url('fonts/font-bold.otf');
 }
 @font-face{
     font-family: "font-italic";
-    src: url('/fonts/font-italic.otf');
+    src: url('fonts/font-italic.otf');
 }
 html{
     overflow-x: hidden;
@@ -19,13 +19,13 @@ body {
     background-size: cover;
     background-color: black;
     margin: 0;
-    font-family: font-regular;
+    font-family: font-regular, Inter;
 }
 b{
-    font-family: font-bold;
+    font-family: font-bold, Inter;
 }
 i{
-    font-family: font-italic;
+    font-family: font-italic, Inter;
 }
 .nav{
     background-color: rgba(29, 29, 31, 0.3);
@@ -54,28 +54,23 @@ i{
 .nav a img{
     height: 15px !important;
 }
-.conatiner{
-    display: flex;
-}
 .ss-conatiner{
     width: 60%;
     float: right;
 }
 .text{
-    width: 32%;
+    width: 33%;
     float: left;
     margin-top: 50px;
     margin-left: 40px;
 }
 .text .heading{
-    font-weight: 900;
     font-size: 45px;
     margin: 0;
-    letter-spacing: 3PX;
 }
 .text .heading-text{
     font-size: 30px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 .text .clock{
     font-size: 18px;
@@ -87,6 +82,9 @@ i{
 .text .counter{
     letter-spacing: 1px;
     font-size: 23px;
+}
+.mobile-description{
+    display: none;
 }
 ul.planets-years-passed{
     padding-left: 20px;
@@ -142,10 +140,8 @@ ul.planets-years-passed{
     font-size: 23px !important;
 }
 ul.solar-system {
-    max-width: 950px;
-    width: 100%;   
-    margin-left: 10px;
-    margin-right: auto;
+    padding: 0;
+    width: 100%;
     position: relative;
     height: 640px;
     list-style: none;
@@ -474,4 +470,32 @@ ul.solar-system li.pluto-planet {
 }
 ::-webkit-scrollbar{
     display: none;
+}
+@media only screen and (max-device-width: 813px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav{
+        padding: 2px;
+    }
+    .mobile-description{
+        display: block;
+        width: 90%;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 24px;
+    }
+    .ss-conatiner{
+        float: none;
+        width: 100%;
+    }
+    .text{
+        width: 90%;
+        float: none;
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
 }
